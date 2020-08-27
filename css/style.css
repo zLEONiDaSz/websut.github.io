@@ -1,0 +1,622 @@
+@font-face {
+    font-family: 'sutregular';
+    src: url('../fonts/sut_regular_ver_1.00-webfont.eot');
+    src: url('../fonts/sut_regular_ver_1.00-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sut_regular_ver_1.00-webfont.woff2') format('woff2'),
+         url('../fonts/sut_regular_ver_1.00-webfont.woff') format('woff'),
+         url('../fonts/sut_regular_ver_1.00-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+0E00–U+0E7F;
+  }
+
+body{
+    font-family: 'sutregular';
+    font-size: 14px;
+}
+/* ทำให้ไม่มีขอบ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+@media (min-width: 780px) {
+    .c1 {
+        display: none;
+        align-items: center;
+        padding: unset;
+        /* width: 100%; */
+        justify-content: space-between;
+        padding: 2vw 2vw 0 2vw;
+        color: #f26522;
+        font-size: 4vw;
+      }
+
+  .head-menu{
+    width: 100%;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-color:#3F3A3A;
+    overflow-x: hidden;
+    color: white;
+    padding-top: 20px;
+    display: block;
+    border: none;
+    font-size: 18px;
+    padding: 30px 10px 30px 60px;
+  }
+
+  .menu ul ul { /* ซ่อน menu และให้แสดง เป็นเต็มจอ */
+    display: none;
+    width: 100%;
+    position: static;
+    background: white;
+  }
+
+  .menu ul ul li {
+    text-align: left;
+    display: block;
+    background: #dbdbdb;
+}
+
+    .menu ul ul li a{
+        padding-left: 40px;
+    }
+
+    .menu ul li i { /* ความห่างของ ^ */
+        padding-left: 8px;
+    }
+
+    .menu {
+        font-family: 'sutregular';
+        height: 100%;
+        width: 277px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #FDFCF8;
+        overflow-x: hidden;
+        padding-top: 0px;
+    }
+    .menu a {
+        font-family: 'sutregular';
+        padding: 20px 8px 20px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #f26522;
+        display: block;
+        border: none;
+        background: none;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+    }
+    .menu a:hover {
+        color:black;
+        background-color:#f26522 ;
+    }
+
+    .content {
+        margin-left: 300px;
+        font-size: 20px;
+        padding: 0px 10px;
+        height: 0px;
+    }
+    .head{
+        text-align: center;
+        font-size: 35px;
+        padding: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: auto;
+        border-style: solid;
+        border-radius: 10px;
+        border-color: #E7902D;
+        margin-bottom: 50px;
+    }
+
+    .images-detail{
+        margin-top: 80px;
+        text-align: center;
+    }
+    .images-detail img{
+        width: 80%;
+        height: 250px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .detail-head{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    width: 230px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #E7902D;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .detail-header{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    width: 355px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #E7902D;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .detail-header2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    width: 520px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #E7902D;
+    }
+
+    .detail-content{
+    width: 80%;
+    margin-top: 30px;
+    padding: 50px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #E7902D;
+    text-align: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .img-detail{
+    text-align: center;
+    }
+    .img-detail img{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .border-detail{
+    text-align: center;
+    width: 650px;
+    margin-top: 10px;
+    margin-left: 250px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #E7902D;
+
+    }
+    .select-detail{
+    text-align: center;
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 500px;
+    margin-bottom: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #E7902D;
+    }
+    select{
+    width: 75px;
+    border-style: solid;
+    border-radius: 5px;
+    display: inline-block;
+    border-color: #E7902D;
+    }
+    .button-detail{
+    font-family: 'sutregular';
+    margin-left: 430px;
+    width: 350px;
+    border-radius: 20px;
+    border: none;
+    background-color: #E7902D;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    }
+    .button-detail:hover{
+    background-color: #f11f10;
+    color: black;
+    }
+    .search-detail{
+    text-align: center;
+    width: 400px;
+    margin-top: 30px;
+    margin-left: 400px;
+    margin-bottom: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #E7902D;
+    }
+    input[type=text]{
+    width: 250px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    }
+    input[type=submit] {
+    width: 100px;
+    background-color: #E7902D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+    input[type=submit] :hover{
+    background-color: white;
+    color: #3F3A3A;
+    }
+    .form-pre{
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #E7902D;
+    }
+    .form-head{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 360px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #E7902D;
+    width: 500px;
+    text-align: center;
+    }
+    .button-dowload{
+    font-family: 'sutregular';
+    margin-left: 50px;
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+    background-color: #07a02d;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    }
+    .button-dowload:hover{
+    background-color: tomato;
+    color: black;
+    }
+    hr.new {
+    border: 1px solid gray;
+    }
+    .header {
+        background-image: url(../images/sut.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 30rem;
+    }
+        .header img{
+            width: 100%;
+        }
+    .centered {
+    color: white;
+    font-size: 5vw;
+    position: absolute;
+    top: 30%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    }
+
+    .detail{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    }
+
+    .detail1{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    }
+
+    .b1 img{
+    width: 45%;
+    border-style: solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    }
+    .b2 img{
+    width: 45%;
+    border-style: solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    }
+    .b3 img{
+    width: 45%;
+    border-style: solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .dropdown-container a {
+    padding-left: 40px;
+    }
+
+    /*Scroll*/
+
+    ::-webkit-scrollbar {
+    width: 5px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: gray; 
+    border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: rgb(83, 83, 83); 
+    }
+
+}
+
+
+/* หน้าจอ ipad and mobile */
+@media (max-width: 780px) {
+    .c1 {
+        padding: 2vw 2vw 0 2vw;
+        font-size: 4vw;
+      }
+    .head-menu{
+        display: none;
+    }
+    .menu nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 10000;
+        opacity: 0.9;
+        background: #f26522;
+    }
+
+    .menu a {
+        font-size: 1vw; /* ขนาดใน menu nav */
+        color: #f26522;
+        text-decoration: none; /* ไม่ต้องแสดง Link ใต้คำ */
+    }
+
+    .menu ul {
+        margin: 0 3vw 0 0;
+        padding: 0;
+        list-style-type: none; /* ไม่ต้องแสดง .หน้าคำ หน้าคำ */
+        position: relative;
+    }
+    .menu ul li {
+        display: inline-block; /* ให้อยู่ใน block ของตัวเอง */
+        position: relative;
+    }
+
+    .menu ul li a { /* ปรับขนาดของ a */
+        display: block;
+        padding: 1.2vw 1.3vw;
+    }
+
+    .menu ul li i { /* ความห่างของ ^ */
+        padding-left: 8px;
+    }
+
+    .menu ul ul { /*Key สำคัญมากในการ Slide ของ แถ็บบน*/
+        position: absolute;
+        min-width: 200px;
+        display: none;
+    }
+
+    .menu ul ul li { /* สีของกล่อง slide ลงมา */
+        text-align: left;
+        display: block;
+        background: #dbdbdb;
+    }
+
+    .menu ul ul li a{
+        padding-left: 40px;
+    }
+
+    .menu ul li:hover { /* เมื่อ เมาส์ชี้แถ็บ เปลี่ยนสี */
+        background: #f26522;
+    }
+
+    .menu ul li:hover ul { /* เมื่อ ชี้ ให้แสดงกล่องลงมาเลย เท่ๆ */
+        display: block;
+    }
+
+    .menu ul li a:hover { /* เมื่อ ชี้ ตัวหนังสือในกล่อง slide เปลี่ยนสี  */
+        color: black;
+    }
+
+    .logo-tab { /* ไม่ให้แสดง logo desk */
+        display: none;
+      }
+
+      .c1 { /* แสดงรูปที่ซ่อน logo  */
+        display: block;
+        text-align: center;
+      }
+
+      .menu nav { /* แสดง tab menu ให้เป็น block */
+        display: block;
+      }
+
+      .menu a { /* ขนาดฟ้อน */
+        font-size: 3.5vw;
+      }
+
+      .menu ul { /* ซ่อน menu และให้แสดง เป็นเต็มจอ */
+        display: none;
+        width: 100%;
+        position: static;
+        background: white;
+      }
+
+      .menu ul li { /* ทำให้ menu เป็น block */
+        display: block;
+      }
+
+      .menu ul li a {
+        padding: 2.5vw 3vw; /* ปรับความห่างให้สวยงาม */
+      }
+
+      .menu ul ul {
+        position: static; /* ทำให้แท็บเลื่อนลงมา ไม่ซ้อนกัน */
+      }
+
+      #icon{
+          color: white;
+      }
+
+        /* SUT */
+    .header {
+        background-image: url(../images/sut.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 30rem;
+    }
+      .header img{
+          width: 100%;
+      }
+      .centered {
+        color: white;
+        font-size: 8vw;
+        position: absolute;
+        top: 30%;
+        left: 17%;
+      }
+      .head{
+        text-align: center;
+        font-size: 17px;
+        padding: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        width: auto;
+        border-style: solid;
+        border-radius: 10px;
+        border-color: #E7902D;
+        margin: 0px 10px 30px 10px;
+    }
+
+    .detail{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin: 15px;
+      }
+    
+
+      .images-detail{
+        margin-top: 80px;
+        text-align: center;
+    }
+    
+    .images-detail img{
+        width: 80%;
+        height: 150px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    /* บุคลากร */
+    .detail1{
+        display: grid;
+        grid-template-columns: auto ;
+        
+        }
+    
+        .b1 img{
+        width: 45%;
+        border-style: solid;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+        }
+        .b1 p{
+            padding-bottom: 40px;
+        }
+
+        .b2 img{
+        width: 45%;
+        border-style: solid;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+        }
+        .b2 p{
+            padding-bottom: 40px;
+        }
+
+        .b3 img{
+        width: 45%;
+        border-style: solid;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .detail-content{
+            width: 95%;
+            /* margin-top: 30px; */
+            padding: 20px;
+            border-style: solid;
+            border-radius: 10px;
+            border-color: #E7902D;
+            text-align: left;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+            }
+
+        .detail-head{
+            margin-left: 10px;
+            margin-bottom: 15px;
+            padding: 5px;
+            width: 150px;
+            border-style: solid;
+            border-radius: 10px;
+            border-color: #E7902D;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .detail-header{
+            margin-left: 10px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            width: 260px;
+            border-style: solid;
+            border-radius: 10px;
+            border-color: #E7902D;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+
+        .detail-header2{
+            margin-left: 10px;
+            margin-bottom: 15px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            width: 220px;
+            border-style: solid;
+            border-radius: 10px;
+            border-color: #E7902D;
+        }
+
+}
